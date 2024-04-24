@@ -6,7 +6,7 @@ This document will go through a few open-source datasets and explain their chara
 
 Movielens is a non-commercial website that helps user find movies that they might like. It is run by GroupLens, a research lab at the University of Minnesota. Movielens datasets can be found on [Grouplinks website](https://grouplens.org/datasets/movielens/). The 100K dataset has 100K observed values
 
-[Imagine there are visuals here]
+[Imagine there are visuals here, for visuals, open dataoverview.html] 
 
 ### Movielens 1M
 
