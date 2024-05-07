@@ -9,18 +9,14 @@ Movielens is a non-commercial website that helps user find movies that they migh
 The 100K and the 1M are among those classified by Grouplens as "older datasets". The dataset they reccommend for new research is the 25M dataset from 2019, which is a lot more recent compared to the 100K dataset which is from 1998. Sadly, these datasets are too much for my hardware to handle so I cant visualise them like I did in this file.
 
 ```{r, fig.width=10, fig.height=11, echo=FALSE}
-load("MovieLens100/MovieLens100visuals.Rdata")
-print(informationDf)
-print(summary_plot)
+knitr::include_graphics("MovieLens100/MovieLens100.png")
 ```
 
 ### Movielens 1M
 
 Movielens 1M also comes from Grouplens. It dates 2003, so it is slightly more recent than the 100K dataset. It constain 1M obserrvations.
 ```{r, fig.width=10, fig.height=11, echo=FALSE}
-load("Movielens1M/MovieLens1Mvisuals.Rdata")
-print(informationDf)
-print(summary_plot)
+knitr::include_graphics("MovieLens1M/MovieLens1M.png")
 ```
 
 ### Jester
@@ -36,20 +32,15 @@ distinguish approximately 200 levels of ratings in the scale." This explains why
 
 
 ```{r, fig.width=10, fig.height=11, echo=FALSE}
-load("Jester/Jestervisuals.Rdata")
-print(informationDf)
-print(summary_plot)
+knitr::include_graphics("Jester/Jester.png")
 ```
 
-<!-- ### Personality -->
+### Personality
 
-<!-- Also from the grouplens website, personality comes from [Nguyen et al. 2018](https://doi.org/10.1007/s10796-017-9782-y) a paper which examines people satisfaction with recommendation systems. The source of these ratings are also Movielens, where users were shown an invitation to participate in this study. Only users who had rated 15 or more movies were eligible, as Movielens generally only starts recommending movies when 15 or more have been rated. -->
+ Also from the grouplens website, personality comes from [Nguyen et al. 2018](https://doi.org/10.1007/s10796-017-9782-y) a paper which examines people satisfaction with recommendation systems. The source of these ratings are also Movielens, where users were shown an invitation to participate in this study. Only users who had rated 15 or more movies were eligible, as Movielens generally only starts recommending movies when 15 or more have been rated.
 
-<!-- ```{r, fig.width=10, fig.height=11, echo=FALSE} -->
-<!-- load("personality/personalityvisuals.Rdata") -->
-<!-- print(informationDf) -->
-<!-- print(summary_plot) -->
-<!-- ``` -->
-
+```{r, fig.width=10, fig.height=11, echo=FALSE}
+knitr::include_graphics("personality/personality.png")
+```
 
 
