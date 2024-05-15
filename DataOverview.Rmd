@@ -19,6 +19,20 @@ Movielens 1M also comes from Grouplens. It dates 2003, so it is slightly more re
 knitr::include_graphics("MovieLens1M/MovieLens1M.png")
 ```
 
+### Movielens 25M
+
+Also from Grouplens, this dataset contains 25 million observed values, and is the dataset Grouplens recommends for new research. It is also fairly popular among recent papers. 
+
+```{r, fig.show="hold", out.width="50%", echo=FALSE}
+load("MovieLens25M/MovieLens25Minfo.RData")
+print(informationDf)
+knitr::include_graphics("MovieLens25M/MovieLens25Mratings.png")
+knitr::include_graphics("MovieLens25M/MovieLens25Muser_mean_plot.png")
+knitr::include_graphics("MovieLens25M/MovieLens25Mitem_mean_plot.png")
+knitr::include_graphics("MovieLens25M/MovieLens25Muser_sd_plot.png")
+knitr::include_graphics("MovieLens25M/MovieLens25Mitem_sd_plot.png")
+```
+
 ### Jester
 
 Jester is a research project from the UC Berkeley Laboratory for Automation Science and Engineering. It is a joke reccomendation system, where users rate 100 jokes from  (-10.0 to 10). The datasets uses only user who have rated >35 jokes, although a different portion of the dataset is available for those that rated between 15 and 35 jokes. If you end up using this dataset email the owner out of courtesy.
@@ -42,5 +56,20 @@ knitr::include_graphics("Jester/Jester.png")
 ```{r, fig.width=10, fig.height=11, echo=FALSE}
 knitr::include_graphics("personality/personality.png")
 ```
+
+### Amazon Grocery and Gourmet food
+
+This Dataset is an updated version of the Amazon review dataset released in 2014. It is retrieved [here](https://nijianmo.github.io/amazon/). It is from the recommended "small" subsets.These data have been reduced to extract the k-core, such that each of the remaining users and items have k reviews each. Intrestingly the data is very heavily biased towards 5 star ratings.
+
+```{r, fig.show="hold", out.width="50%", echo=FALSE}
+load("AmazonFood/AmazonFoodinfo.RData")
+print(informationDf)
+knitr::include_graphics("AmazonFood/AmazonFoodratings.png")
+knitr::include_graphics("AmazonFood/AmazonFooduser_mean_plot.png")
+knitr::include_graphics("AmazonFood/AmazonFooditem_mean_plot.png")
+knitr::include_graphics("AmazonFood/AmazonFooduser_sd_plot.png")
+knitr::include_graphics("AmazonFood/AmazonFooditem_sd_plot.png")
+```
+
 
 
