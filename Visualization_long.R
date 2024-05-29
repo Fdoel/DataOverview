@@ -3,7 +3,7 @@ library(ggpubr)
 library(ggthemes)
 
 # Import dataset
-dataset = "MovieLens25M"
+dataset = "Yelp"
 datafile = sprintf("%s/%s.RData", dataset, dataset)
 load(datafile)
 
